@@ -283,6 +283,10 @@ footer .container {
   color: var(--white);
 }
 
+.headerhero-img {
+  width: 200px;
+}
+
 /* HeaderHero Styles End  */
 
 /* NativeApps Styles Start  */
