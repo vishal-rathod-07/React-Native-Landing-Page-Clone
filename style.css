@@ -257,8 +257,13 @@ footer .container {
   padding: 1px 10px 1px 9px;
   position: relative;
   margin-right: 1rem;
-  text-decoration: none;
+  text-decoration: none !important;
   margin-top: 2rem;
+}
+
+.twitter-button:hover {
+  background-color: #0c7abf;
+  color: white;
 }
 
 .twitter-button svg {
@@ -433,6 +438,10 @@ footer .container {
   width: 56px;
 }
 
+.community p a:hover {
+  background-color: #bbeffd99;
+}
+
 .community img {
   float: left;
   margin-right: 20px;
@@ -478,6 +487,10 @@ footer .container {
   content: ">";
   left: -13px;
   position: absolute;
+}
+
+.getstarted .container-fluid {
+  padding-left: 0;
 }
 
 .getstarted .steps li {
@@ -544,6 +557,7 @@ footer .container {
   font-weight: 500;
   margin: 0 0 8px;
   text-transform: uppercase;
+  padding-top: 15px;
 }
 
 .footer__items {
