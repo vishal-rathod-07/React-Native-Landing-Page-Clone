@@ -163,6 +163,7 @@ footer .container {
 .button-keys {
   min-width: 50px;
   height: 18px;
+  color: #969faf;
 }
 
 .btn-text-k {
@@ -179,6 +180,11 @@ footer .container {
   box-shadow: rgb(205, 205, 230) 0px -2px 0px 0px inset,
     rgb(255, 255, 255) 0px 0px 1px 1px inset,
     rgba(30, 35, 90, 0.4) 0px 1px 2px 1px;
+  background-image: linear-gradient(
+    -225deg,
+    rgb(213, 219, 228),
+    rgb(248, 248, 248)
+  );
 }
 
 /* Navbar Styles End  */
@@ -186,7 +192,7 @@ footer .container {
 /* Headerhero Styles Start  */
 
 .headerhero {
-  margin-top: 62px;
+  margin-top: 60px;
 }
 
 .dark {
@@ -281,6 +287,10 @@ footer .container {
 
 .ActionButton.secondary:hover {
   color: var(--white);
+}
+
+.headerhero-img {
+  width: 200px;
 }
 
 /* HeaderHero Styles End  */
@@ -584,6 +594,11 @@ footer .container {
 }
 
 @media only screen and (max-width: 991px) {
+  .navbar .container {
+    margin: 0 !important;
+    max-width: 100%;
+  }
+
   .headerhero .col-xl-8 {
     text-align: center;
   }
