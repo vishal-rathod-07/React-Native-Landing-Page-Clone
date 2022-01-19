@@ -66,7 +66,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Next
+                    0.66
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Next</a></li>
@@ -138,7 +138,10 @@
                   </a>
                 </li>
                 <li class="nav-item d-flex align-items-center">
-                  <button onclick="toggleText()" class="toggle">
+                  <button
+                    onclick="toggleText()"
+                    class="toggle d-flex align-items-center justify-content-between"
+                  >
                     <span class="switch" id="switch"></span>
                     <span>🌜</span>
                     <span>🌞</span>
@@ -1288,7 +1291,7 @@
     function toggleText() {
       var x = document.getElementById("switch");
       if (x.style.left === "0em") {
-        x.style.left = "1.2em";
+        x.style.left = "1.4em";
       } else {
         x.style.left = "0em";
       }

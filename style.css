@@ -82,7 +82,7 @@ footer .container {
 
 .navbar {
   background-color: #20232a;
-  min-height: 61.75px;
+  max-height: 64px;
 }
 
 .navitem-left {
@@ -105,6 +105,14 @@ footer .container {
   font-weight: 400;
 }
 
+.dropdown-menu {
+  min-width: 120px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .nav-link,
 .navbar-brand {
   color: #f5f6f7;
@@ -112,6 +120,7 @@ footer .container {
 
 .navbar-logo {
   transition: 0.6s ease-in;
+  margin-right: 10px;
 }
 
 .navbar .navbar__toggle {
@@ -142,6 +151,8 @@ footer .container {
   border-radius: 1em;
   position: relative;
   border: 0;
+  height: 24px;
+  width: 50px;
 }
 
 .switch {
@@ -149,7 +160,7 @@ footer .container {
   height: 1.3em;
   width: 1.3em;
   background-color: white;
-  top: 0.2em;
+  top: 0.06em;
   margin: 0 0.1em;
   border-radius: 1em;
   transition: 0.4s all ease;
@@ -221,7 +232,11 @@ footer .container {
 /* Headerhero Styles Start  */
 
 .headerhero {
-  margin-top: 60px;
+  margin-top: 56px;
+}
+
+.headerhero .buttons {
+  padding-left: 0;
 }
 
 .dark {
@@ -759,21 +774,33 @@ footer .container {
   }
 }
 
-@media only screen and (max-width: 425px) {
-  .headerhero .buttons .row {
-    flex-direction: column;
+@media only screen and (max-width: 480px) {
+  .ActionButton {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+  }
+
+  .buttons {
+    padding-right: 0;
   }
 
   .column {
-    padding: 0 10px;
+    padding: 0 21.25px;
   }
+
+  .nativeapp-img {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* .headerhero .buttons .row {
+    flex-direction: column;
+  } */
 
   .headerhero .buttons {
     width: 100%;
-  }
-  .ActionButton {
-    max-width: 100%;
-    display: inline-block;
   }
 
   .footer .row {
