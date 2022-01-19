@@ -97,7 +97,7 @@ footer .container {
 }
 
 .nav-item {
-  padding: 0.25rem 10px;
+  padding: 0.25rem 5px;
 }
 
 #navbarDropdown {
@@ -410,7 +410,7 @@ footer .container {
 /* Community Section Styles  */
 
 .community .right {
-  padding-right: 0;
+  /* padding-right: 0; */
 }
 
 .community .firstP img {
@@ -706,7 +706,7 @@ footer .container {
   }
 
   .nativecode pre {
-    padding: 1rem;
+    padding: 1rem 10%;
   }
 
   .nativedevelopment .dissection {
@@ -764,11 +764,16 @@ footer .container {
     flex-direction: column;
   }
 
+  .column {
+    padding: 0 10px;
+  }
+
   .headerhero .buttons {
     width: 100%;
   }
   .ActionButton {
     max-width: 100%;
+    display: inline-block;
   }
 
   .footer .row {
@@ -777,6 +782,10 @@ footer .container {
 }
 
 @media only screen and (max-width: 1200px) {
+  .navbar .container {
+    margin: 0 !important;
+    max-width: 100%;
+  }
   .button-text {
     display: none !important;
   }
