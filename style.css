@@ -96,6 +96,15 @@ footer .container {
   width: 100%;
 }
 
+.nav-item {
+  padding: 0.25rem 10px;
+}
+
+#navbarDropdown {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .nav-link,
 .navbar-brand {
   color: #f5f6f7;
@@ -123,6 +132,11 @@ footer .container {
   color: var(--brand);
 }
 
+.github-btn:hover {
+  opacity: 0.5;
+  color: white;
+}
+
 .toggle {
   background-color: #4d4d4d;
   border-radius: 1em;
@@ -148,11 +162,21 @@ footer .container {
 
 .search-bar {
   padding: 0.2rem 0.4rem;
-  border: 0;
+  border: 2px solid #efefef;
   border-radius: 0.3rem;
   height: 36px;
   margin-left: 10px;
 }
+
+.search-bar:hover {
+  border: 2px solid var(--link-hover);
+  background-color: white;
+}
+
+.search-bar:hover .button-text {
+  color: black;
+}
+
 .search-icon {
   height: 20px;
   width: 16px;
@@ -219,6 +243,7 @@ footer .container {
   position: relative;
   margin-right: 1rem;
   text-decoration: none;
+  margin-top: 2rem;
 }
 
 .twitter-button svg {
@@ -338,10 +363,11 @@ footer .container {
 .copyButton {
   background: rgba(0, 0, 0, 0.3);
   color: var(--ifm-color-white);
+  font-size: 13px !important;
   opacity: 0;
   padding: 0.4rem 0.5rem;
   position: absolute;
-  left: 50%;
+  left: 100%;
   top: 1rem;
   transition: opacity 0.2s ease-in-out;
   user-select: none;
@@ -430,6 +456,13 @@ footer .container {
   text-align: start !important;
   text-align-last: start !important;
   color: var(--white);
+}
+
+.getstarted code:first-child:before {
+  color: gray;
+  content: ">";
+  left: -13px;
+  position: absolute;
 }
 
 .getstarted .steps li {
