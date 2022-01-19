@@ -139,6 +139,11 @@ footer .container {
   margin: 0 0.1em;
   border-radius: 1em;
   transition: 0.4s all ease;
+  border: 1px solid black;
+}
+
+.toggle:hover .switch {
+  box-shadow: 0 0 2px 3px var(--brand);
 }
 
 .search-bar {
@@ -213,6 +218,7 @@ footer .container {
   padding: 1px 10px 1px 9px;
   position: relative;
   margin-right: 1rem;
+  text-decoration: none;
 }
 
 .twitter-button svg {
@@ -317,15 +323,15 @@ footer .container {
   margin-bottom: -50px;
 }
 
-.codeBlockContainer {
+.code-block-container {
   overflow: visible;
 }
 
-.codeBlockContent {
+.code-block-content {
   position: relative;
   display: ltr;
 }
-.codeBlockContent pre {
+.code-block-content pre {
   margin-bottom: 0;
 }
 
@@ -335,14 +341,14 @@ footer .container {
   opacity: 0;
   padding: 0.4rem 0.5rem;
   position: absolute;
-  left: 20rem;
+  left: 50%;
   top: 1rem;
   transition: opacity 0.2s ease-in-out;
   user-select: none;
   border-radius: 0.4em;
 }
 
-.codeBlockContainer:hover .copyButton {
+.code-block-container:hover .copyButton {
   opacity: 1;
   color: white;
 }
@@ -599,6 +605,34 @@ footer .container {
     max-width: 100%;
   }
 
+  .nativecode .left,
+  .crossplatform .left,
+  .fastrefresh .right {
+    padding-bottom: 2rem;
+  }
+
+  .column {
+    padding: 0 68px;
+  }
+
+  .copyButton {
+    left: 40%;
+  }
+
+  .talks .vidWrapper {
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+  }
+
+  .talks iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
   .headerhero .col-xl-8 {
     text-align: center;
   }
@@ -656,7 +690,6 @@ footer .container {
   }
 
   .talks .right {
-    height: 355px;
     margin-top: 2rem;
   }
 
@@ -674,12 +707,12 @@ footer .container {
 }
 
 @media only screen and (max-width: 760px) {
-  .headerhero .title {
-    font-size: 60px;
+  .column {
+    padding: 0 68px;
   }
 
-  .column {
-    padding: 0 1rem;
+  .headerhero .title {
+    font-size: 60px;
   }
 
   .getstarted .terminal {
