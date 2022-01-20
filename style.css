@@ -233,6 +233,16 @@ footer .container {
 
 .headerhero {
   margin-top: 56px;
+  min-height: 465px;
+}
+
+.headerhero .column {
+  padding: 0;
+}
+
+.headerhero .column .col-content {
+  width: 100%;
+  text-align: left;
 }
 
 .headerhero .buttons {
@@ -341,7 +351,8 @@ footer .container {
 }
 
 .headerhero-img {
-  width: 200px;
+  width: 350px;
+  padding: 0;
 }
 
 /* HeaderHero Styles End  */
@@ -350,6 +361,10 @@ footer .container {
 
 .nativeapps {
   overflow: hidden;
+}
+
+.nativeapps .left {
+  padding-left: 0;
 }
 
 .Heading {
@@ -428,10 +443,6 @@ footer .container {
 }
 
 /* Community Section Styles  */
-
-.community .right {
-  /* padding-right: 0; */
-}
 
 .community .firstP img {
   height: 56px;
@@ -557,7 +568,7 @@ footer .container {
   font-weight: 500;
   margin: 0 0 8px;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding-top: 2em;
 }
 
 .footer__items {
@@ -621,6 +632,10 @@ footer .container {
     max-height: 400px;
   }
 
+  .nativeapps .left {
+    margin-top: -25px;
+  }
+
   .community .left {
     padding-left: 0;
   }
@@ -667,6 +682,19 @@ footer .container {
     max-width: 100%;
   }
 
+  .headerhero-img {
+    padding: 2em;
+  }
+
+  .headerhero .column .col-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar {
+    min-height: 63.75px;
+  }
+
   .nativecode .left,
   .crossplatform .left,
   .fastrefresh .right {
@@ -708,7 +736,7 @@ footer .container {
   }
 
   .nativeapp-img {
-    width: 50% !important;
+    width: 56% !important;
   }
 
   .nativeapps .left {
@@ -777,6 +805,10 @@ footer .container {
     font-size: 60px;
   }
 
+  .headerhero .tagline {
+    font-size: 30px;
+  }
+
   .getstarted .terminal {
     width: 100%;
   }
@@ -793,6 +825,14 @@ footer .container {
     width: 100%;
     max-width: 100%;
     display: inline-block;
+  }
+
+  .headerhero .column .col-content {
+    text-align: left;
+  }
+
+  .headerhero .container .row {
+    padding: 0 1.25rem;
   }
 
   .buttons {
