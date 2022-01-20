@@ -38,6 +38,16 @@ pre {
   overflow: auto;
 }
 
+.nativedevelopment code {
+  background-color: #0000000f;
+  border: 1px solid #0000001a;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 90%;
+  padding: 0.1rem 0.1rem;
+  color: black;
+}
+
 video {
   object-fit: contain;
 }
@@ -276,8 +286,12 @@ footer .container {
   color: white;
 }
 
+.twitter-button .icon {
+  display: inline;
+}
+
 .twitter-button svg {
-  margin-right: 5px;
+  width: 20px;
 }
 
 .github-button {
@@ -343,11 +357,11 @@ footer .container {
 
 .ActionButton.secondary {
   background: none;
-  color: var(--white);
+  color: var(--brand);
 }
 
 .ActionButton.secondary:hover {
-  color: var(--brand);
+  color: var(--white);
 }
 
 .headerhero-img {
@@ -652,6 +666,10 @@ footer .container {
     padding-left: 0;
   }
 
+  .nativecode .left {
+    padding-left: 0;
+  }
+
   .dissection {
     height: 321px;
     margin-top: -50px;
@@ -737,6 +755,10 @@ footer .container {
 
   .nativeapp-img {
     width: 56% !important;
+  }
+
+  .community .container {
+    padding: 0;
   }
 
   .nativeapps .left {
@@ -851,7 +873,10 @@ footer .container {
   }
 
   .nativecode .left {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
+  }
+  .fastrefresh .right {
+    padding-bottom: 0 !important;
   }
 
   .nativecode .right {
@@ -863,6 +888,14 @@ footer .container {
   }
 
   .community .container {
+    padding: 0;
+  }
+
+  .footer .first {
+    margin-bottom: 1.5rem;
+  }
+
+  .headerhero .col-12 {
     padding: 0;
   }
 }
