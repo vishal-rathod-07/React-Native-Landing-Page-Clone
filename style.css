@@ -343,11 +343,11 @@ footer .container {
 
 .ActionButton.secondary {
   background: none;
-  color: var(--brand);
+  color: var(--white);
 }
 
 .ActionButton.secondary:hover {
-  color: var(--white);
+  color: var(--brand);
 }
 
 .headerhero-img {
@@ -740,7 +740,9 @@ footer .container {
   }
 
   .nativeapps .left {
+    max-height: 300px;
     text-align: center;
+    padding-right: 0 !important;
   }
 
   .dissection img {
@@ -752,12 +754,8 @@ footer .container {
     padding: 0 4rem;
   }
 
-  .nativeapps .left {
-    max-height: 300px;
-  }
-
   .nativecode .right {
-    padding: 0;
+    padding: 0 !important;
     height: 28rem;
     overflow-y: scroll;
   }
@@ -843,8 +841,29 @@ footer .container {
     padding: 0 21.25px;
   }
 
+  .nativeapps .left {
+    padding: 0;
+  }
+
   .nativeapp-img {
     width: 100% !important;
+    padding: 0 21.25px;
+  }
+
+  .nativecode .left {
+    padding-bottom: 0;
+  }
+
+  .nativecode .right {
+    height: 100%;
+  }
+
+  .fastrefresh .left {
+    padding: 0;
+  }
+
+  .community .container {
+    padding: 0;
   }
 }
 
