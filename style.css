@@ -851,6 +851,7 @@ footer .container {
   .nativedevelopment .dissection {
     height: 450px;
     margin: 0;
+    margin-bottom: -50px;
   }
 
   .crossplatform .right {
@@ -1021,8 +1022,18 @@ footer .container {
   }
 }
 
+@media only screen and (max-width: 960px) {
+  .headerhero .column {
+    padding: 0 4rem !important;
+  }
+}
+
 @media only screen and (min-width: 481px) and (max-width: 960px) {
-  .crossplatform .row .right svg {
+  .crossplatform .row {
+    justify-content: center;
+  }
+
+  .crossplatform .row .right {
     width: 86%;
   }
 }
