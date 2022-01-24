@@ -93,6 +93,12 @@ footer .container {
 .navbar {
   background-color: #20232a;
   max-height: 64px;
+  padding: 8.5px 16px;
+}
+
+.navbar .container {
+  padding: 0;
+  max-width: 1360px;
 }
 
 .navitem-left {
@@ -209,7 +215,7 @@ footer .container {
 .search-bar {
   padding: 0.2rem 0.4rem;
   border: 2px solid #efefef;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   height: 36px;
   margin-left: 10px;
 }
@@ -419,17 +425,27 @@ footer .container {
 
 /* NativeCode Styles  */
 
+.nativecode .prism-code {
+  width: 30rem;
+  margin: auto;
+}
+
 .nativecode .right {
   margin-bottom: -50px;
 }
 
 .code-block-container {
   overflow: visible;
+  background-color: #282c34;
 }
 
 .code-block-content {
   position: relative;
   display: ltr;
+}
+
+.codeBlockLines_3Zfi {
+  margin: auto;
 }
 .code-block-content pre {
   margin-bottom: 0;
@@ -551,6 +567,7 @@ footer .container {
 
 .getstarted .steps li p {
   font-size: 17px;
+  margin-bottom: calc(1.25 * 1rem);
 }
 
 .getstarted .terminal {
@@ -596,6 +613,18 @@ footer .container {
   background-color: var(--footer-background-color);
   color: var(--ifm-footer-color);
   padding: var(--footer-padding-vertical) var(--footer-padding-horizontal);
+}
+
+.footer .row.first {
+  margin-bottom: 8px;
+}
+
+.footer .row.first .col-6 {
+  padding-right: 16px;
+  padding-left: 0px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+  margin-top: 4px;
 }
 
 .footer-dark {
@@ -682,7 +711,7 @@ footer .container {
 
   .nativecode .prism-code {
     height: 450px;
-    margin-right: -9999px;
+    /* margin-right: -9999px; */
     padding: 16px 1.5rem;
     font-size: 90%;
   }
@@ -795,10 +824,6 @@ footer .container {
     padding-right: 0 !important;
   }
 
-  .dissection {
-    margin-top: 50px;
-  }
-
   .dissection img {
     /* width: 200em;
     top: 2em; */
@@ -820,16 +845,21 @@ footer .container {
   }
 
   .nativecode pre {
-    padding: 1rem 10%;
+    padding: 1rem;
   }
 
   .nativedevelopment .dissection {
     height: 450px;
+    margin: 0;
   }
 
   .crossplatform .right {
     text-align: center;
     padding-top: 25px;
+  }
+
+  .fastrefresh .left {
+    padding: 0;
   }
 
   .fastrefresh video {
@@ -875,6 +905,12 @@ footer .container {
 @media only screen and (max-width: 996px) {
   .Navigation {
     display: block;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .prism-code {
+    padding: 1rem !important;
   }
 }
 
@@ -975,5 +1011,18 @@ footer .container {
     max-width: 100%;
     margin: 0;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer .col-6 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  .crossplatform .row .right svg {
+    width: 86%;
   }
 }
