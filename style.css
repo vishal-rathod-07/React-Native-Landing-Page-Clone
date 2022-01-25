@@ -42,10 +42,6 @@ pre {
   overflow: hidden;
 }
 
-.nativedevelopment .left {
-  padding-left: 0;
-}
-
 .nativedevelopment code {
   background-color: #0000000f;
   border: 1px solid #0000001a;
@@ -440,7 +436,7 @@ footer .container {
 .nativecode .prism-code {
   background-color: #282c34;
   border-radius: 0;
-  font-size: 80%;
+  font-size: 90%;
 }
 
 .codeBlockLines {
@@ -494,12 +490,12 @@ footer .container {
 
 /* NativeDevelopment Styles  */
 
-.dissection {
+.nativedevelopment .dissection {
   position: relative;
   margin-top: -50px;
 }
 
-.dissection img {
+.nativedevelopment .dissection img {
   top: 0;
   left: 0;
   position: absolute;
@@ -749,7 +745,11 @@ footer .container {
     padding-left: 0;
   }
 
-  .dissection {
+  .nativedevelopment .left {
+    padding-left: 0;
+  }
+
+  .nativedevelopment .dissection {
     height: 300px;
   }
 
@@ -799,7 +799,7 @@ footer .container {
   }
 
   .column {
-    padding: 0 68px !important;
+    padding: 0 68px;
   }
 
   .copyButton {
@@ -833,7 +833,7 @@ footer .container {
   }
 
   .nativeapp-img {
-    width: 40% !important;
+    width: 51% !important;
   }
 
   .community .container {
@@ -844,14 +844,6 @@ footer .container {
     max-height: 300px;
     text-align: center;
     padding-right: 0 !important;
-  }
-
-  .dissection img {
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
   }
 
   .column {
@@ -866,7 +858,7 @@ footer .container {
 
   .nativecode pre {
     padding: 1rem;
-    width: 100% !important;
+    width: 100%;
   }
 
   .nativedevelopment .dissection {
@@ -1050,9 +1042,28 @@ footer .container {
   .headerhero .column {
     padding: 0 4rem !important;
   }
+
+  .crossplatform svg {
+    margin: 0 auto;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 960px) {
+  .nativecode .right {
+    background-color: var(--dark);
+    height: 28rem;
+    overflow-y: scroll;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nativecode .prism-code {
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    width: 30rem;
+  }
+
   .nativedevelopment .dissection {
     height: 450px;
   }
