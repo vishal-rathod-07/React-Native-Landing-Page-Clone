@@ -188,7 +188,7 @@ footer .container {
   border: 0;
   color: #fff;
   background: none;
-  margin-right: 0.5rem;
+  margin-right: 9px;
 }
 
 .navbar-brand:hover .navbar-logo {
@@ -757,6 +757,10 @@ footer .container {
 /* Media Queries */
 
 @media only screen and (min-width: 992px) {
+  .headerhero .column {
+    max-width: 100%;
+  }
+
   .column {
     max-width: 450px;
   }
@@ -821,6 +825,14 @@ footer .container {
   .navbar .container {
     margin: 0 !important;
     max-width: 100%;
+  }
+
+  .navbar__toggle {
+    padding-bottom: 1px;
+  }
+
+  .DocSearch-Search-Icon.search-icon {
+    padding-bottom: 0;
   }
 
   .headerhero-img {
