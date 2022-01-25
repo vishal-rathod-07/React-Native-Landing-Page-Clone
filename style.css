@@ -76,10 +76,12 @@ footer .container {
 
 .left {
   padding-right: 50px;
+  padding-left: 0;
 }
 
 .right {
   padding-left: 50px;
+  padding-right: 0px;
 }
 
 .light {
@@ -927,6 +929,11 @@ footer .container {
     padding-top: 25px;
   }
 
+  .crossplatform svg {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
   .fastrefresh .left {
     padding: 0;
   }
@@ -966,6 +973,11 @@ footer .container {
     font-size: 30px;
   }
 
+  .getstarted .container {
+    width: 80%;
+    padding: 0;
+  }
+
   .getstarted .terminal {
     width: 100%;
   }
@@ -974,6 +986,22 @@ footer .container {
 @media only screen and (max-width: 996px) {
   .Navigation {
     display: block;
+  }
+
+  .footer {
+    --footer-padding-horizontal: 0;
+  }
+
+  .footer .row.first {
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  .footer .row .col-6 {
+    flex-basis: 48% !important;
+    margin-bottom: 28px;
+    max-width: 48% !important;
+    text-align: center;
   }
 }
 
@@ -984,6 +1012,16 @@ footer .container {
 }
 
 @media only screen and (max-width: 480px) {
+  .headerhero .column {
+    padding: 0 !important;
+  }
+
+  .headerhero .buttons .row {
+    padding: 0 !important;
+    width: 100%;
+    margin: auto;
+  }
+
   .ActionButton {
     width: 100%;
     max-width: 100%;
@@ -1091,8 +1129,14 @@ footer .container {
   }
 }
 
+@media only screen and (min-width: 500px) {
+  .footer .col-12 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 500px) {
-  .footer .col-6 {
+  .footer .col-12 {
     flex: 0 0 auto;
     width: 100%;
   }
@@ -1100,16 +1144,11 @@ footer .container {
 
 @media only screen and (max-width: 960px) {
   .headerhero .column {
-    padding: 0 4rem !important;
-  }
-
-  .crossplatform svg {
-    margin: 0 auto;
-    max-width: 100%;
+    padding: 0 4rem;
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 960px) {
+@media only screen and (min-width: 481px) and (max-width: 991px) {
   .nativecode .right {
     background-color: var(--dark);
     height: 28rem;
