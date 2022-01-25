@@ -148,11 +148,15 @@
                 <li class="nav-item d-flex align-items-center">
                   <button
                     onclick="toggleText()"
-                    class="toggle d-flex align-items-center justify-content-between"
+                    class="toggle d-flex align-items-center justify-content-around"
                   >
-                    <span class="switch" id="switch" style="left: 0em"></span>
-                    <span>🌜</span>
-                    <span>🌞</span>
+                    <span
+                      class="switch"
+                      id="switch"
+                      style="left: -0.01em"
+                    ></span>
+                    <span id="moon" style="opacity: 0">🌜</span>
+                    <span id="sun" style="opacity: 1">🌞</span>
                   </button>
                 </li>
               </ul>
@@ -215,7 +219,7 @@
           <div class="container">
             <div class="row">
               <div
-                class="column col-xl-7 col-lg-7 col-sm-12 order-xl-1 order-lg-1 order-2 order-sm-2 d-flex justify-content-center align-items-center column"
+                class="col-xl-7 col-lg-7 col-sm-12 order-xl-1 order-lg-1 order-2 order-sm-2 d-flex justify-content-center align-items-center"
               >
                 <div class="col-content">
                   <h1 class="title">React Native</h1>
@@ -233,7 +237,7 @@
                 </div>
               </div>
               <div
-                class="column col-xl-5 col-lg-5 col-sm-12 order-xl-2 order-lg-2 order-1 d-flex justify-content-center align-items-center column"
+                class="col-xl-5 col-lg-5 col-sm-12 order-xl-2 order-lg-2 order-1 d-flex justify-content-center align-items-center"
               >
                 <img
                   class="headerhero-img"
@@ -1322,10 +1326,16 @@
   <script>
     function toggleText() {
       var x = document.getElementById("switch");
-      if (x.style.left === "0em") {
-        x.style.left = "1.4em";
+      var s = document.getElementById("sun");
+      var m = document.getElementById("moon");
+      if (x.style.left === "-0.01em") {
+        x.style.left = "1.5em";
+        s.style.opacity = "0";
+        m.style.opacity = "1";
       } else {
-        x.style.left = "0em";
+        x.style.left = "-0.01em";
+        s.style.opacity = "1";
+        m.style.opacity = "0";
       }
     }
   </script>

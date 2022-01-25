@@ -123,7 +123,9 @@ footer .container {
 }
 
 .nav-item.dropdown {
-  padding-left: 10px !important;
+  padding-left: 11px !important;
+  padding-top: 6px;
+  padding-bottom: 2px;
 }
 
 .navbar-nav > :last-child {
@@ -178,6 +180,10 @@ footer .container {
   margin-right: 0.5rem;
 }
 
+.toggle {
+  padding: 0 3px;
+}
+
 .navbar .navbar__toggle {
   border: 0;
   color: #fff;
@@ -196,6 +202,11 @@ footer .container {
   color: var(--brand);
 }
 
+.github-btn {
+  padding-top: 5.6px;
+  padding-bottom: 9.7px;
+}
+
 .github-btn:hover {
   opacity: 0.5;
   color: white;
@@ -212,14 +223,14 @@ footer .container {
 
 .switch {
   position: absolute;
-  height: 1.3em;
-  width: 1.3em;
+  height: 22px;
+  width: 22px;
   background-color: white;
   top: 0.06em;
   margin: 0 0.1em;
   border-radius: 1em;
   transition: 0.4s all ease;
-  border: 1px solid black;
+  border: 1px solid #4d4d4d;
 }
 
 .toggle:hover .switch {
@@ -256,22 +267,29 @@ footer .container {
   margin-top: -1px;
   color: #1c1e21;
 }
+
+.DocSearch-Search-Icon.search-icon {
+  padding-bottom: 2px;
+}
+
 .button-text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  padding: 0 12px 0 6px;
+  padding: 1px 12px 0 6px;
 }
 
 .button-keys {
   min-width: 50px;
   height: 18px;
   color: #969faf;
+  padding-bottom: 2px;
 }
 
 .btn-text-k {
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   color: #969faf;
+  padding-top: 1px;
 }
 
 .button-key {
@@ -1032,6 +1050,10 @@ footer .container {
 }
 
 @media only screen and (max-width: 1200px) {
+  .search-bar {
+    justify-content: center !important;
+    padding: 0 12px;
+  }
   .navbar .container {
     margin: 0 !important;
     max-width: 100%;
