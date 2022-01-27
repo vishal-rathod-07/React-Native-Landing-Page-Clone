@@ -591,6 +591,7 @@ p {
 .AppList img {
   border-radius: 20%;
   max-width: 100%;
+  vertical-align: baseline;
 }
 
 .AppList .item {
