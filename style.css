@@ -937,7 +937,7 @@ footer .container {
   }
 
   .nativeapp-img {
-    width: 51% !important;
+    width: 40% !important;
   }
 
   .community .container {
@@ -1212,6 +1212,10 @@ footer .container {
 
   .crossplatform .row .right {
     width: 86%;
+  }
+
+  .community .Heading {
+    margin-bottom: 1.5rem;
   }
 }
 
