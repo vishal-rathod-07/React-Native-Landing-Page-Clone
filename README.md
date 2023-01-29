@@ -1,4 +1,4 @@
-Boosted React Native: A Bootstrap Landing Page Clone
+React Native Revisited: A Bootstrap Landing Page Clone
 ====================================================
 
 This project is a clone of a React Native landing page using HTML, CSS, and Bootstrap. The aim of the project is to showcase the design skills and the ability to replicate a given design using HTML, CSS, and Bootstrap.
