@@ -23,9 +23,9 @@ Getting Started
 
 Clone the repository:
 
-bashCopy code
-
-`git clone https://github.com/vishal-rathod-07/React-Native-Landing-Page-Clone.git`
+```bash
+git clone https://github.com/vishal-rathod-07/React-Native-Landing-Page-Clone.git
+```
 
 Open the `index.html` file in a browser to view the design.
 
